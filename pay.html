@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Payment form</title>
+    <link rel="icon" href="lettre-r.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="pay.css">
+    <script src="script.js" defer></script>
+  </head>
+
+
+  <body>
+    
+    <main>
+    
+      <form action="#" method="post">
+
+        <h1>Payment form</h1>
+
+        <section>        
+          <label for="cc-number">Card number</label>
+          <!-- Allow for spaces and for shorter and longer payment card numbers -->
+          <input id="cc-number" name="cc-number" inputmode="numeric" autocomplete="cc-number" maxlength="50" pattern="[\d ]{10,30}" required>
+        </section>
+
+        <section>        
+          <label for="cc-name">Name on card</label>
+          <input id="cc-name" name="cc-name" autocomplete="cc-name" maxlength="30" pattern="[\p{L} \-\.]+" required>
+        </section>
+        
+        <section id="cc-exp-csc">      
+          <div>
+            <label for="cc-exp">Expiry date</label>
+            <input id="cc-exp" name="cc-exp" placeholder="MM/YY" maxlength="5" autocomplete="cc-exp" required>
+          </div> 
+          <div>
+            <label for="cc-csc">Security code</label>
+            <input id="cc-csc" name="cc-csc" inputmode="numeric" maxlength="3" autocomplete="cc-csc" required>
+            <div class="explanation">Back of card, last 3 digits</div>
+          </div>
+        </section>  
+
+
+        <button id="complete-payment">Complete payment</button>
+
+      </form>
+    
+    </main>
+    
+  </body>
+</html>

@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+	--orange: #ff8c09;
+}
+
+header {
+	background: transparent;
+}
+
+header nav {
+	padding: 30px 5% 0px 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+header nav h1 {
+	margin: 20 0 40;
+	text-transform: uppercase;
+	color: var(--orange);
+}
+header nav .right {
+	display: flex;
+	align-items: center;
+}
+
+header nav .right p a {
+	text-decoration: none;
+  color: black; 
+margin: 0 15px 0 0;
+
+}
+header nav .right p a:hover {
+	color: var(--orange);
+	cursor: pointer;
+}
+header nav .right p:hover {
+	color: var(--orange);
+	cursor: pointer;
+}
+header nav .right button {
+	padding: 5px 15px;
+	font-size: 16px;
+	border: 1px solid var(--orange);
+	border-radius: 5px;
+	color: #ccc;
+	cursor: pointer;
+	transition: color 0.5s, background-color 0.5s;
+	text-decoration: none;
+
+}
+header nav .right button:hover {
+	color: white;
+	background-color: var(--orange);
+}
+
+
+body {
+  background-image: url(https://www.soladis.com/wp-content/uploads/2021/01/fond-bleu-degrade.jpg) ;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0 130px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  background: rgb(250, 163, 33);
+  color: rgb(180, 23, 23);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  overflow: hidden;
+  height: 65px;
+}
+
+.header a {
+  color: inherit;
+}
+
+.header a:hover {
+  font-weight: bold;
+}
+
+.header-logo {
+  float: left;
+}
+
+.header-nav {
+  float: right;
+
+}
+
+.header-nav ul li {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+
+.container {
+  position: absolute;
+  top: 180px;
+  width: 90%;
+  margin-left: 60px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.01);
+  backdrop-filter: blur(20px);
+  font-family: Saira Condensed;
+  font-size: 24px;
+}
+.check {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--orange);
+
+}
+.btn-cont {
+  display: flex;
+
+  justify-content: space-evenly;
+  width: 100px;
+  height: 40px;
+  background: transparent;
+  border: 0.2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 20px rgba(43, 42, 42, 0.5);
+  margin-top: 20px;
+  border-radius: 40px;
+  margin-right: 20px;
+  align-items: center;
+  transform: translate(70px, -50%);
+}
+.btn-cont button {
+  outline: none;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: transparent;
+  background: #dbdbdb;
+  color: black;
+  font-size: 27px;
+}
+
+table {
+  margin: 20px 0px;
+  width: 100%;
+}
+
+td {
+  height: 100px;
+  text-align: center;
+
+  width: 200px;
+  border-top: 1px solid #d2d8ccbd;
+}
+img {
+  width: 200px;
+  height: 170px;
+}
+
+.minus:hover {
+  background-color: #ef5350;
+  cursor: pointer;
+}
+.plus:hover {
+  background-color: #66bb6a;
+  cursor: pointer;
+}
+.more button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: large;
+    color: #f0a651;
+}
+.more:hover {
+
+  color: #FF8C09;
+}
